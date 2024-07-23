@@ -16,12 +16,13 @@ function renderNotes() {
         noteDiv.textContent = notes[i];
         const deleteButton = document.createElement('button');
         deleteButton.textContent = 'Delete';
+        
         deleteButton.addEventListener('click', function() {
             deleteNote(i);
-        }
+        });
         noteDiv.appendChild(deleteButton);
         notesContainer.appendChild(noteDiv);
-    });
+    }
 
 }
 
